@@ -1,0 +1,6 @@
+framework module MirrorFlyCallKit {
+  umbrella header "MirrorFlyCallKit.h"
+  export *
+
+  module * { export * }
+}

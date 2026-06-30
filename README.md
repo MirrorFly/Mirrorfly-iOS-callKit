@@ -1,12 +1,12 @@
 # MirrorFlyCallKit (Binary SPM)
 
-Binary-only Swift Package for MirrorFlyCallKit. No source code is included.
+Binary-only Swift Package for MirrorFlyCallKit. No implementation source is included.
 
 ## Add in Xcode
 
 1. File → Add Package Dependencies
 2. Enter: `https://github.com/MirrorFly/Mirrorfly-iOS-callKit`
-3. Select version/tag: `1.0.0`
+3. Select version `1.0.2` or later
 
 ## Import
 
@@ -14,9 +14,11 @@ Binary-only Swift Package for MirrorFlyCallKit. No source code is included.
 import MirrorFlyCallKit
 ```
 
-## Release asset
+## Contents
 
-- File: `MirrorFlyCallKit.xcframework.zip`
-- SHA-256: `670d912bab92d5ffeb89fa4fa4cae45ab8c0722eb7a138957aa65409976f9f15`
+- `Framework/MirrorFlyCallKit.xcframework` — compiled SDK (no Swift sources)
+- `Framework/LiveKitWebRTC.xcframework` — WebRTC dependency
+- `Framework/RustLiveKitUniFFI.xcframework` — LiveKit UniFFI dependency
+- `Sources/MirrorFlyCallKitSupport/` — SPM linker shim only (no SDK implementation)
 
-Upload `MirrorFlyCallKit.xcframework.zip` to GitHub Release tag `1.0.0` before consumers resolve this package.
+This package uses path-based binary targets so it works with **private** GitHub repositories.
