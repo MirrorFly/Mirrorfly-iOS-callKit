@@ -16,4 +16,3 @@ FOUNDATION_EXPORT const unsigned char MirrorFlyCallKitVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <MirrorFlyCallKit/PublicHeader.h>
 
 
-#import "MirrorFlyCallKit/LKObjCHelpers.h"
